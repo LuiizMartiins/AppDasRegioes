@@ -27,7 +27,7 @@ public class EstadosActivity extends AppCompatActivity {
         btnVoltaRegioes = (Button) findViewById(R.id.btnVoltaRegioes);
 
         CentroOeste0 = new String[] {
-                "Mato Grosso", "Goiás", "Mato Grosso do Sul"
+                "Mato Grosso", "Goiás", "Mato Grosso do Sul", "Distrito Federal"
         };
         Nordeste1 = new String[] {
                 "Maranhão", "Piauí", "Ceará", "Bahia", "Rio Grande do Norte", "Paraíba", "Pernambuco", "Alagoas", "Sergipe"
