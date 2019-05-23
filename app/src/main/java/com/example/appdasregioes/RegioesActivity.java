@@ -1,13 +1,17 @@
 package com.example.appdasregioes;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class RegioesActivity extends AppCompatActivity {
 
+    private Button btnEstados;
     private TextView tvRegioes;
     private ImageView ivAbaixo, ivAcima;
     private String[] regioes;
@@ -18,6 +22,8 @@ public class RegioesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regioes);
+
+        btnEstados = (Button) findViewById(R.id.btnEstados);
 
         regioes = new String[] {
                 "Centro-Oeste",
@@ -49,18 +55,29 @@ public class RegioesActivity extends AppCompatActivity {
                 super.onSwipeBottom();
                 if(contador>0) contador --;
                 tvRegioes.setText( regioes[contador]);
-      //      }
-       //    @Override
-        //    public void onSwipeRight() {
-         //       super.onSwipeRight();
-         //       tvRegioes.setText( estados[contador]);
-         //  }
-            //
-          //  @Override
-          //  public void onSwipeLeft() {
-          //      super.onSwipeLeft();
-          //      tvAfirmacao.setText( estados[contador]);
-           }
+            }
         });
+
+        btnEstados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent
+                        (RegioesActivity.this, EstadosActivity.class);
+                intent.putExtra("regioes", "contador");
+                startActivity(intent);
+            }
+        });
+
     }
 }
+
+//    @Override
+//    public void onSwipeRight() {
+//       super.onSwipeRight();
+//       tvRegioes.setText( estados[contador]);
+//  }
+//
+//  @Override
+//  public void onSwipeLeft() {
+//      super.onSwipeLeft();
+//      tvAfirmacao.setText( estados[contador]);
