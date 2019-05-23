@@ -46,7 +46,7 @@ public class RegioesActivity extends AppCompatActivity {
             @Override
             public void onSwipeTop() {
                 super.onSwipeTop();
-                if (contador<5) contador ++;
+                if (contador<4) contador ++;
                 tvRegioes.setText( regioes[contador]);
             }
 
@@ -63,7 +63,7 @@ public class RegioesActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent
                         (RegioesActivity.this, EstadosActivity.class);
-                intent.putExtra("regioes", "contador");
+                intent.putExtra("regioes", contador);
                 startActivity(intent);
             }
         });

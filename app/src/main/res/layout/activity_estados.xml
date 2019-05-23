@@ -9,7 +9,7 @@
     tools:context=".EstadosActivity">
 
     <TextView
-        android:id="@+id/tvRegioes"
+        android:id="@+id/tvEstados"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_weight="1"
@@ -57,7 +57,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnRegioes"
+        android:id="@+id/btnVoltaRegioes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
