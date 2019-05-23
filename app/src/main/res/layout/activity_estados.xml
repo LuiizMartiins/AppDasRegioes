@@ -15,7 +15,11 @@
         android:layout_weight="1"
         android:background="#dbdbf1"
         android:hint="Regiões"
-        android:textColor="#000" />
+        android:text="Estados"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,6 +65,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Regiões" />
+        android:text="Voltar para as Regiões"
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
 </LinearLayout>

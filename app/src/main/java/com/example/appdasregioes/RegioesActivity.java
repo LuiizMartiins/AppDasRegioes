@@ -70,14 +70,3 @@ public class RegioesActivity extends AppCompatActivity {
 
     }
 }
-
-//    @Override
-//    public void onSwipeRight() {
-//       super.onSwipeRight();
-//       tvRegioes.setText( estados[contador]);
-//  }
-//
-//  @Override
-//  public void onSwipeLeft() {
-//      super.onSwipeLeft();
-//      tvAfirmacao.setText( estados[contador]);
